@@ -1,0 +1,17 @@
+public class Main {
+public static void main(String[] args) {
+String firstName = "Varghese "; // String Space required end of name it will concantate  //
+String secondName ="Baby"; // String //
+String myName = firstName  +  secondName; // String Concentation//
+System.out.println(myName);
+
+int x = 10;
+int y = 11;
+System.out.println(x+y); // Add //
+System.out.println(x-y); // Sub //
+System.out.println(x*y); // Multi //
+System.out.println(x/y); // Division //
+System.out.println(x%y); // Modulo //
+
+ }
+}
