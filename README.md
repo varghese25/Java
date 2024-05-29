@@ -55,3 +55,119 @@ Choice 3 (View Available Seats) -> Display Available Seats
 Choice 4 (Exit) -> Terminate Program
 Invalid Choice -> Display "Invalid Choice" -> Return to Menu
 The program continuously loops, allowing the user to perform multiple operations until they choose to exit.
+
+
+
+                                          FlowChart 
++------------------------+
+|         Start          |
++-----------+------------+
+            |
+            v
++-----------+------------+
+|    Display Menu        |
+| 1. Reserve Seat        |
+| 2. Cancel Reservation  |
+| 3. View Available      |
+|    Seats               |
+| 4. Exit                |
++-----------+------------+
+            |
+            v
++-----------+------------+
+|   Read User Choice     |
++-----------+------------+
+            |
+            v
++-----------+------------+
+| Is Choice 1, 2, 3, or 4?|
++----+-------+-------+----+
+     |       |       |     
+    1|      2|      3|     4
+     |       |       |     
+     v       v       v     
++----+--+ +----+--+ +----+---+
+|Reserve| |Cancel | |  Exit   |
+| Seat  | |Reservation|       |
++----+--+ +----+--+ +----+---+
+     |       |       |
+     v       v       |
++----+--+ +----+--+  |
+|Enter Seat| |Enter Seat|    |
+|Number    | |Number    |    |
+|(1-10)    | |(1-10)    |    |
++----+--+ +----+--+    |
+     |       |         |
+     v       v         |
++----+--+ +----+--+    |
+|Validate| |Validate|   |
+|Seat    | |Seat    |   |
+|Number  | |Number  |   |
++----+--+ +----+--+    |
+     |       |         |
+     |       |         |
++----v--+ +--v-----+   |
+|Invalid | |Invalid |  |
+|Seat    | |Seat    |  |
+|Number  | |Number  |  |
+|(Error) | |(Error) |  |
++----+--+ +----+--+    |
+     |       |         |
+     v       v         |
++----+--+ +----+--+    |
+|Already | |Seat   |   |
+|Reserved| |Not    |   |
+|(Error) | |Reserved|  |
++----+--+ +----+--+    |
+     |       |         |
+     v       v         |
++----+--+ +----+--+    |
+|Reserve | |Cancel |   |
+|Seat    | |Reservation|
+|Success | |Success |  |
++----+--+ +----+--+    |
+     |       |         |
+     v       v         |
++----+--+ +----+--+    |
+|Return  | |Return |   |
+|to Menu | |to Menu|   |
++--------+ +--------+  |
+            |          |
+            |          v
+            |   +------+------+
+            |   |View Available|
+            |   |Seats        |
+            |   +------+------+
+            |          |
+            v          v
+     +------+-----+  +---------+
+     |Display      |  |Exit     |
+     |Available    |  |Program  |
+     |Seats        |  +---------+
+     +-------------+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
