@@ -1,3 +1,5 @@
+                                                     BUS RESERVATION SYSTEM FLOW
+
 **1. Class and Main Method**
 The BusReservationSystem class is defined with a main method. The main method is the entry point of the program.
 
@@ -45,6 +47,7 @@ If the user chooses to exit (choice 4), the program exits using System.exit(0).
 If the user enters an invalid choice, it displays "Invalid Choice" and returns to the menu.
 
 **Overall Flow Summary**
+
 Start Program -> Display Menu -> User Input (1, 2, 3, 4)
 Choice 1 (Reserve Seat) -> Prompt for Seat Number -> Validate -> Reserve if Available
 Choice 2 (Cancel Reservation) -> Prompt for Seat Number -> Validate -> Cancel if Reserved
